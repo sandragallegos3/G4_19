@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
     case "delete_aviones":
         $datos=$Avion->delete_aviones($body["NumeroAvion"]);
-        echo json_encode("Vuelo borrado correctamente ");
+        echo json_encode("Avión borrado correctamente ");
 
     break;
     }
