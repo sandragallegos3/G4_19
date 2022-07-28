@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     case "insert_aviones":
         $datos=$Avion->insert_aviones($body["NumeroAvion"],$body["TipoAvion"],$body["HorasVuelo"],$body["CapacidadPasajeros"],$body["FechaPrimerVuelo"],$body["PaisConstruccion"],$body["CantidadVuelos"]);
 
-        echo json_encode("si llego hasta aca");
+        echo json_encode("Avión insertado correctamente");
         
         
     break; 
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     case "update_aviones":
         $datos=$Avion->update_aviones($body["NumeroAvion"],$body["TipoAvion"],$body["HorasVuelo"],$body["CapacidadPasajeros"],$body["FechaPrimerVuelo"],$body["PaisConstruccion"],$body["CantidadVuelos"]);
 
-        echo json_encode("si llego hasta aca X2");
+        echo json_encode("Datos actualizados corectamente");
         
         
     break; 
