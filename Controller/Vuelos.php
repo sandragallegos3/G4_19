@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     break;
 
 
-    case "ServiVuelos":
+    case "IdVuelos":
         $datos=$Vuelos->get_Servivuelos($body["CodigoVuelo"]);
         echo json_encode($datos);
         
